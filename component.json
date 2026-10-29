@@ -1,24 +1,12 @@
 {
+  "SPDX-FileCopyrightText": "2026 roolrz",
+  "SPDX-License-Identifier": "Apache-2.0",
   "version": 1,
   "name": "memstat",
   "kind": "application",
   "origin": {
     "repository": "https://github.com/roolrz/HypeR",
     "commit": "8d42d047058a2b58a291803700e86487fb723f7a"
-  },
-  "sources": {
-    "Cargo.toml": "app/memstat/Cargo.toml",
-    "component.mk": "app/memstat/component.mk",
-    "src/capture.rs": "app/memstat/src/capture.rs",
-    "src/lib.rs": "app/memstat/src/lib.rs",
-    "src/main.rs": "app/memstat/src/main.rs",
-    "src/snapshot.rs": "app/memstat/src/snapshot.rs",
-    "tests/snapshot.rs": "app/memstat/tests/snapshot.rs"
-  },
-  "SPDX-FileCopyrightText": "2026 roolrz",
-  "SPDX-License-Identifier": "Apache-2.0",
-  "mounts": {
-    "": "app/memstat"
   },
   "packages": [
     "hyper-memstat"
@@ -29,34 +17,5 @@
       "app-test",
       "APP_TEST_PACKAGE=hyper-memstat"
     ]
-  ],
-  "cargo_context": {
-    "Cargo.toml": {
-      "workspace": null,
-      "membership": "..",
-      "dependency_paths": {
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-clap-shared": "lib/clap"
-      },
-      "inherited_dependencies": {
-        "/dependencies/clap": {
-          "workspace": true
-        },
-        "/dependencies/hyper-os": {
-          "workspace": true
-        },
-        "/dependencies/hyper-rt": {
-          "workspace": true
-        },
-        "/dependencies/serde": {
-          "workspace": true
-        },
-        "/dependencies/serde_json": {
-          "workspace": true
-        },
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-clap-shared": {
-          "workspace": true
-        }
-      }
-    }
-  }
+  ]
 }

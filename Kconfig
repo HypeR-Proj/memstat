@@ -1,9 +1,0 @@
-# SPDX-FileCopyrightText: 2026 roolrz
-# SPDX-License-Identifier: Apache-2.0
-
-config SYSTEM_APP_MEMSTAT
-    bool "memstat (/bin/memstat)"
-    default y
-    help
-        Build and deploy hyper-memstat at /bin/memstat.
-

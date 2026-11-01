@@ -1,9 +1,6 @@
 // SPDX-FileCopyrightText: 2026 roolrz
 // SPDX-License-Identifier: Apache-2.0
 
-#[cfg(target_os = "hyper")]
-extern crate hyper_clap_shared as _;
-
 use clap::Parser;
 use hyper_memstat::{capture, snapshot::Snapshot};
 use hyper_os::{inspect::MemoryInspector, startup};
@@ -74,3 +71,6 @@ fn main() -> std::process::ExitCode {
         }
     }
 }
+
+#[cfg(target_os = "hyper")]
+extern crate hyper_clap_shared as clap;

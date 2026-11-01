@@ -4,3 +4,6 @@
 //! Developer memory observations and same-boot comparisons.
 pub mod capture;
 pub mod snapshot;
+
+#[cfg(target_os = "hyper")]
+extern crate hyper_clap_shared as clap;
